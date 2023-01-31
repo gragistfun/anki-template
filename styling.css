@@ -1,28 +1,27 @@
 *,::before,::after{
-	box-sizing:border-box
-}
-
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+	box-sizing: border-box;
 }
 
 .card {
-  font-family: arial;
-  color: white;
-  background-color: #800080;
-	padding: 4% 2%;
+    height: 100vh;
+    padding: 4% 2%;
+    margin: 0;
+
+    font-family: arial;
+    font-size: 25px;
+    color: white;
+    background-color: #800080;
 }
 
 .card1 {
-	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .front {
-	height: 100vh; 
-	display: flex;
-  justify-content: center;
-  align-items: center;
-	text-align: center;
-	font-size: 4rem;
+    height: 100%; 
+    text-align: center;
+
+    font-size: 2em;
 }
