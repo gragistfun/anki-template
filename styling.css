@@ -1,0 +1,28 @@
+*,::before,::after{
+	box-sizing:border-box
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.card {
+  font-family: arial;
+  color: white;
+  background-color: #800080;
+	padding: 4% 2%;
+}
+
+.card1 {
+	overflow: hidden;
+}
+
+.front {
+	height: 100vh; 
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+	font-size: 4rem;
+}
