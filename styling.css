@@ -1,11 +1,12 @@
 *,::before,::after{
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .card {
-    height: 100vh;
+    height: 100vh;	
     padding: 4% 2%;
     margin: 0;
+    overflow: hidden;
 
     font-family: arial;
     font-size: 25px;
@@ -24,4 +25,38 @@
     text-align: center;
 
     font-size: 2em;
+}
+
+.back {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.back-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    text-align: center;
+    font-size: 3rem;
+}
+
+.back-bottom {	
+    height: 100%; 
+    text-align: center;
+    overflow-y: scroll;
+
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+}
+
+.back-bottom-item {
+    background-color: white;
+    padding: 4% 2%;
+    text-align: left;
+
+    font-size: 1.5rem;
 }
