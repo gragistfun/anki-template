@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    width: 0px; 
+}
+
 .card {
     height: 100vh;	
     padding: 4% 2%;
