@@ -7,6 +7,16 @@
     width: 0px; 
 }
 
+/*
+ * Example color palette:
+ *
+ * Vocabulary card : #20124d
+ * Sentence card   : #4c1130
+ * Grammar card    : #0c343d
+ * Listening card  : #7f6000
+ * Extra           : #660000
+ */
+
 :root {
     --primary-color: #800080;
     --primary-contrast-color: #fff;
