@@ -14,7 +14,7 @@
 
 **Daily limits**
 
-- New cards/dar : 7
+- New cards/day\* : 7 / 999
 - Maximum reviews/dax : 9999
 
 **New card**
@@ -26,7 +26,7 @@
 
 **Lapses**
 
-- Relearing steps : 15m 4h 2d 7d
+- Relearning steps : 15m 4h 2d 7d
 - Minimum interval : 12
 - Leech threshold : 5
 - Leech action : Tag Only
@@ -34,7 +34,7 @@
 **Display Order**
 
 - New card gather order : Deck
-- New card sort order : Random note, then card type
+- New card sort order\* : Order gatheres / Card type, then random
 - New/review order : Show before reviews
 - Interday learning/review order : Mix with reviews
 - Review sort order : Due date, then random
@@ -51,6 +51,31 @@
 - Easy bonus : 1.30
 - Interval modifier : 0.85
 - New interval : 0.20
+
+### Subdecks
+
+Different decks of a subject matter can be organized as subdecks. This open the
+possibility for interleaving in review process by setting the `Display order`
+option `Review sort order : Due date, then random`.
+
+This comes with some caveats. From the [Anki Manual](https://docs.ankiweb.net/deck-options.html):
+
+```
+If your deck has subdecks, each deck can optionally be assigned a different preset.
+When Anki shows a card, it will check which subdeck the card is in, and use the
+options for that deck. [But]:
+
+The display order options in the v3 scheduler are taken from the deck you select
+to study, not the deck of the current card.
+```
+
+Sometimes it may be desirable to have different `Display order` options for different
+subdecks, especially for new cards. Some decks come with a specific order
+(`New card sort order : Order gatheres`), while others a better learned shuffled
+(`New card sort order : Card type, then random`). 
+By setting `New/review order : Show before reviews` to the targeted deck and 
+learning the new cards individually is it still possible to learn the cards in order.
+To differentiate it may be a good idea to mark those decks, for example `Example Deck*`.
 
 ## References
 
