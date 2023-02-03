@@ -14,7 +14,7 @@
 
 **Daily limits**
 
-- New cards/day\* : 7 / 999
+- New cards/day\* : 7 / 999 [Subdeck / Superdeck]
 - Maximum reviews/dax : 9999
 
 **New card**
@@ -34,7 +34,7 @@
 **Display Order**
 
 - New card gather order : Deck
-- New card sort order\* : Order gatheres / Card type, then random
+- New card sort order\* : Order gatheres / Card type, then random [ordered / shuffled]
 - New/review order : Show before reviews
 - Interday learning/review order : Mix with reviews
 - Review sort order : Due date, then random
