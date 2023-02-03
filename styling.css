@@ -34,8 +34,6 @@ html {
 }
 
 .card {
-    height: 100vh;	
-    padding: 4% 2%;
     margin: 0;
     overflow: hidden;
 
@@ -43,14 +41,14 @@ html {
     background-color: var(--primary-color);
 }
 
-.card1 {
+.front {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.front {
-    height: 100%; 
+.front-body {
     text-align: center;
 
     font-size: var(--font-size-huge);
