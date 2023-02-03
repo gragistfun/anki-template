@@ -41,6 +41,11 @@ html {
     background-color: var(--primary-color);
 }
 
+#deckname {
+    position: absolute;
+    left: 1rem;
+}
+
 .front {
     height: 100vh;
     display: flex;
