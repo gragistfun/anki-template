@@ -77,6 +77,11 @@ By setting `New/review order : Show before reviews` to the targeted deck and
 learning the new cards individually is it still possible to learn the cards in order.
 To differentiate it may be a good idea to mark those decks, for example `Example Deck*`.
 
+## Add-ons
+
+- [Advanced Browser](https://ankiweb.net/shared/info/874215009) [874215009]
+- [Colorful Tags (+ Hierarchical Tags)](https://ankiweb.net/shared/info/594329229) [594329229]
+
 ## References
 
 [Anki Manual](https://docs.ankiweb.net/)
