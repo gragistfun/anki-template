@@ -26,7 +26,7 @@
     </div>
 
     <div class='bottom-extended-container'>
-        <button>Show more</button>
+        <button id='extend-button'>Show more</button>
 
         <div class='bottom-extended'>
             <div class='bottom-extended-item' data-section='Translation'>
@@ -60,3 +60,11 @@
     </div>
 </main>
 
+<script>
+    const button = document.getElementById('extend-button')
+    const card = document.querySelector('.card')
+
+    button.addEventListener("click", _ => {
+        card.classList.add('extended')
+    })
+</script>
