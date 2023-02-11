@@ -4,11 +4,12 @@
 
 ::-webkit-scrollbar {
     display: none;
-    width: 0px; 
+    width: 0px;
 }
 
 :root {
     --primary-color: purple;
+    --secondary-color: hwb(0 20% 100%);
     --primary-contrast-color: white;
     --neutral-text-color: black;
 
@@ -26,7 +27,7 @@ html {
 
 .card {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     color: var(--primary-contrast-color);
     background-color: var(--primary-color);
@@ -50,7 +51,7 @@ html {
     align-items: center;
     font-size: var(--font-size-huge);
     border-radius: 0 0 .3em 0.3em;
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.5) ;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.5);
 }
 
 .bottom {
@@ -69,3 +70,42 @@ img {
     border-radius: .3em;
     border: solid white 2px;
 }
+
+.bottom-extended-container {
+    position: absolute;
+    top: calc(100vh - 3rem);
+    border-radius:.5rem 0.5rem 0 0;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
+    height: 70%;
+    font-size: var(--font-size-normal);
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.bottom-extended {
+    height: 100%;
+    background-color: var(--secondary-color);
+    overflow-y: scroll;
+    padding: 0 1em;
+}
+
+.bottom-extended-item {
+    text-align: left;
+}
+
+.bottom-extended-image-item {
+    text-align: center;
+}
+
+.bottom-extended-item::before {
+    content: attr(data-section);
+    text-align: left;
+    display: block;
+    font-size: var(--font-size-small);
+}
+
+.bottom-extended-item p {
+    padding: 0 2em;
+}
+

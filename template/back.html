@@ -3,25 +3,60 @@
 <main class='container'>
     <div class='top'>
         <p>
-            {{Vocabulary}}
+        {{Vocabulary}}
         </p>
     </div>
 
     <div class='bottom'>
-        <p class='Translation'>
-            {{Translation}}
+        <p class='translation'>
+        {{Translation}}
         </p>
 
         {{#Sentence}}
-            <p>
-            {{Sentence}}
-            </p>
+        <p>
+        {{Sentence}}
+        </p>
         {{/Sentence}}
 
         {{#Image}}
-            <p>
-            {{Image}}
-            </p>
+        <p>
+        {{Image}}
+        </p>
         {{/Image}}
     </div>
+
+    <div class='bottom-extended-container'>
+        <button>Show more</button>
+
+        <div class='bottom-extended'>
+            <div class='bottom-extended-item' data-section='Translation'>
+                <p class='bottom-extended-item'>
+                {{Translation}}
+                </p>
+            </div>
+
+            {{#Sentence}}
+            <div class='bottom-extended-item' data-section='Sentences'>
+                <p>
+                {{Sentence}}
+                </p>
+            </div>
+            {{/Sentence}}
+
+            {{#Image}}
+            <div class='bottom-extended-item bottom-extended-image-item' data-section='Image'>
+                {{Image}}
+            </div>
+            {{/Image}}
+
+            {{#Extra}}
+            <div class='bottom-extended-item' data-section='Extra'>
+                <p>
+                {{Extra}}
+                </p>
+            </div>
+            {{/Extra}}
+        </div>
+    </div>
 </main>
+
