@@ -27,7 +27,7 @@ html {
 
 .card {
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 
     color: var(--primary-contrast-color);
     background-color: var(--primary-color);
@@ -46,6 +46,9 @@ html {
 }
 
 .top {
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 30;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +76,7 @@ img {
 
 .bottom-extended-container {
     position: absolute;
+    z-index: 20;
     top: calc(100vh - 3rem);
     border-radius:.5rem 0.5rem 0 0;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
@@ -87,7 +91,7 @@ img {
     height: 100%;
     background-color: var(--secondary-color);
     overflow-y: scroll;
-    padding: 0 1em;
+    padding: 1em 1em;
 }
 
 .bottom-extended-item {
