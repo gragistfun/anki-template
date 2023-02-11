@@ -1,0 +1,27 @@
+<p id='deckname'> {{Deck}} - {{Card}} </p>
+
+<main class='container'>
+    <div class='top'>
+        <p>
+            {{Vocabulary}}
+        </p>
+    </div>
+
+    <div class='bottom'>
+        <p class='Translation'>
+            {{Translation}}
+        </p>
+
+        {{#Sentence}}
+            <p>
+            {{Sentence}}
+            </p>
+        {{/Sentence}}
+
+        {{#Image}}
+            <p>
+            {{Image}}
+            </p>
+        {{/Image}}
+    </div>
+</main>
