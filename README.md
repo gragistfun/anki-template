@@ -81,6 +81,11 @@ To differentiate it may be a good idea to mark those decks, for example `Example
 
 - [Advanced Browser](https://ankiweb.net/shared/info/874215009) [874215009]
 - [Colorful Tags (+ Hierarchical Tags)](https://ankiweb.net/shared/info/594329229) [594329229]
+- [Review Heatmap](https://ankiweb.net/shared/info/1771074083) [1771074083]
+- [More Decks Stats and Time Left](https://ankiweb.net/shared/info/1556734708) [1556734708]
+- [True Retention](https://ankiweb.net/shared/info/613684242) [613684242]
+    - True Retention opens with `Shift + Click` on `Stats`
+- [Anki Simulator](https://ankiweb.net/shared/info/817108664) [817108664]
 
 ## References
 
