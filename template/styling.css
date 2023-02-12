@@ -7,6 +7,17 @@
     width: 0px;
 }
 
+/*
+Example Color Palette:
+
+Vocabulary  : hwb(315 10% 55%)
+Sentence    : hwb(195 10% 55%)
+Grammar     : hwb(120 10% 55%)
+Listening   : hwb( 60 10% 55%)
+Extra 1     : hwb(255 10% 55%)
+Extra 2     : hwb(  0 10% 55%)
+*/
+
 :root {
     --primary-color: purple;
     --secondary-color: hwb(0 20% 100%);
