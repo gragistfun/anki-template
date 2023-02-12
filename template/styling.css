@@ -18,6 +18,8 @@
     --font-size-medium: 1.5rem;
     --font-size-normal: 1rem;
     --font-size-small: 0.75rem;
+
+    --extend-button-height: 3rem;
 }
 
 html {
@@ -79,7 +81,7 @@ img {
     position: absolute;
     z-index: 20;
     width: 100%;
-    top: calc(30vh - 3rem);
+    top: calc(30vh - var(--extend-button-height));
     border-radius:.5rem 0.5rem 0 0;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
     height: 70%;
@@ -121,3 +123,17 @@ img {
 .extended .bottom-extended-container{
     transform: translateY(0);
 }
+
+#extend-button {	
+    height: var(--extend-button-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+#extend-button svg {
+    fill: white;
+}
+
