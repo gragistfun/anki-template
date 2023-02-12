@@ -22,41 +22,41 @@
         {{Image}}
         </p>
         {{/Image}}
-    </div>
 
-    <div class='bottom-extended-container'>
-        <div id='extend-button'>
-            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="m12.167 29.5-1-1L20 19.667l8.833 8.833-1 1L20 21.667Zm0-10.167-1-1L20 9.5l8.833 8.833-1 1L20 11.458Z"/></svg>
-        </div>
-
-        <div class='bottom-extended'>
-            <div class='bottom-extended-item' data-section='Translation'>
-                <p class='bottom-extended-item'>
-                {{Translation}}
-                </p>
+        <div class='bottom-extended-container'>
+            <div id='extend-button'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="m12.167 29.5-1-1L20 19.667l8.833 8.833-1 1L20 21.667Zm0-10.167-1-1L20 9.5l8.833 8.833-1 1L20 11.458Z"/></svg>
             </div>
 
-            {{#Sentence}}
-            <div class='bottom-extended-item' data-section='Sentences'>
-                <p>
-                {{Sentence}}
-                </p>
-            </div>
-            {{/Sentence}}
+            <div class='bottom-extended'>
+                <div class='bottom-extended-item' data-section='Translation'>
+                    <p class='bottom-extended-item'>
+                    {{Translation}}
+                    </p>
+                </div>
 
-            {{#Image}}
-            <div class='bottom-extended-item bottom-extended-image-item' data-section='Image'>
-                {{Image}}
-            </div>
-            {{/Image}}
+                {{#Sentence}}
+                <div class='bottom-extended-item' data-section='Sentences'>
+                    <p>
+                    {{Sentence}}
+                    </p>
+                </div>
+                {{/Sentence}}
 
-            {{#Extra}}
-            <div class='bottom-extended-item' data-section='Extra'>
-                <p>
-                {{Extra}}
-                </p>
+                {{#Image}}
+                <div class='bottom-extended-item bottom-extended-image-item' data-section='Image'>
+                    {{Image}}
+                </div>
+                {{/Image}}
+
+                {{#Extra}}
+                <div class='bottom-extended-item' data-section='Extra'>
+                    <p>
+                    {{Extra}}
+                    </p>
+                </div>
+                {{/Extra}}
             </div>
-            {{/Extra}}
         </div>
     </div>
 </main>
