@@ -109,6 +109,7 @@ img {
     left: 0;
     top: calc(-1 * var(--extend-button-height));
     height: 100%;
+    width: 100%;
     border-radius: var(--border-radius);
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
     font-size: var(--font-size-normal);
