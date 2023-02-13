@@ -1,5 +1,13 @@
 # Anki Template
 
+## Development
+
+### Setup
+
+```sh
+npm install
+```
+
 ## Settings
 
 ### General Options
