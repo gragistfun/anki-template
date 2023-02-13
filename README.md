@@ -80,8 +80,8 @@ to study, not the deck of the current card.
 Sometimes it may be desirable to have different `Display order` options for different
 subdecks, especially for new cards. Some decks come with a specific order
 (`New card sort order : Order gatheres`), while others a better learned shuffled
-(`New card sort order : Card type, then random`). 
-By setting `New/review order : Show before reviews` to the targeted deck and 
+(`New card sort order : Card type, then random`).
+By setting `New/review order : Show before reviews` to the targeted deck and
 learning the new cards individually is it still possible to learn the cards in order.
 To differentiate it may be a good idea to mark those decks, for example `Example Deck*`.
 
@@ -92,7 +92,7 @@ To differentiate it may be a good idea to mark those decks, for example `Example
 - [Review Heatmap](https://ankiweb.net/shared/info/1771074083) [1771074083]
 - [More Decks Stats and Time Left](https://ankiweb.net/shared/info/1556734708) [1556734708]
 - [True Retention](https://ankiweb.net/shared/info/613684242) [613684242]
-    - True Retention opens with `Shift + Click` on `Stats`
+  - True Retention opens with `Shift + Click` on `Stats`
 - [Anki Simulator](https://ankiweb.net/shared/info/817108664) [817108664]
 
 ## References

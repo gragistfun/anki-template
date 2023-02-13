@@ -1,10 +1,12 @@
-*,::before,::after{
-    box-sizing: border-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    display: none;
-    width: 0px;
+  display: none;
+  width: 0px;
 }
 
 /*
@@ -19,147 +21,144 @@ Extra 2     : hwb(  0 10% 55%)
 */
 
 :root {
-    --primary-color: hwb(315 10% 55%);
-    --secondary-color: hwb(0 20% 100%);
-    --primary-contrast-color: white;
-    --neutral-text-color: black;
+  --primary-color: hwb(315 10% 55%);
+  --secondary-color: hwb(0 20% 100%);
+  --primary-contrast-color: white;
+  --neutral-text-color: black;
 
-    --font-size-huge: 3rem;
-    --font-size-large: 2rem;
-    --font-size-medium: 1.5rem;
-    --font-size-normal: 1rem;
-    --font-size-small: 0.75rem;
+  --font-size-huge: 3rem;
+  --font-size-large: 2rem;
+  --font-size-medium: 1.5rem;
+  --font-size-normal: 1rem;
+  --font-size-small: 0.75rem;
 
-    --max-card-height: 100vh;
-    --max-card-width: 100vw;
-    --extend-button-height: 3rem;
+  --max-card-height: 100vh;
+  --max-card-width: 100vw;
+  --extend-button-height: 3rem;
 
-    --border-radius: 0.3rem;
+  --border-radius: 0.3rem;
 }
 
 html {
-    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
-    font-size: 20px;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-size: 20px;
 }
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-
-    color: var(--primary-contrast-color);
-    background-color: var(--primary-color) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  color: var(--primary-contrast-color);
+  background-color: var(--primary-color) !important;
 }
 
 .container {
-    height: min(100vh, var(--max-card-height));
-    width: min(100vw, var(--max-card-width));
-    display: grid;
-    grid-template-rows: 30% 70%;    
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.5);
-    background-color: var(--primary-color) !important;
+  height: min(100vh, var(--max-card-height));
+  width: min(100vw, var(--max-card-width));
+  display: grid;
+  grid-template-rows: 30% 70%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-color) !important;
 }
 
 .top {
-    background-color: var(--primary-color);
-    position: relative;
-    z-index: 30;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size-huge);
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.5);
+  background-color: var(--primary-color);
+  position: relative;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-huge);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
 }
 
 #deckname {
-    position: absolute;
-    top: 0.5em;
-    left: 1em;
-    font-size: var(--font-size-small);
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  font-size: var(--font-size-small);
 }
 
 .bottom {
-    position: relative;
-    font-size: var(--font-size-medium);
-    text-align: center;
-    padding: 1em 1em 0;
-    overflow: hidden;
+  position: relative;
+  font-size: var(--font-size-medium);
+  text-align: center;
+  padding: 1em 1em 0;
+  overflow: hidden;
 }
 
 .translation {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 img {
-    max-height: 25vh;
-    margin-top: 1em;
-    border-radius: var(--border-radius);
-    border: solid white 2px;
+  max-height: 25vh;
+  margin-top: 1em;
+  border-radius: var(--border-radius);
+  border: solid white 2px;
 }
 
 .bottom-extended-container {
-    position: absolute;
-    z-index: 20;
-    left: 0;
-    top: calc(-1 * var(--extend-button-height));
-    height: 100%;
-    width: 100%;
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.5);
-    font-size: var(--font-size-normal);
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
-
-    transform: TranslateY(100%);
-    transition: transform ease-in 300ms;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: calc(-1 * var(--extend-button-height));
+  height: 100%;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  font-size: var(--font-size-normal);
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  transform: TranslateY(100%);
+  transition: transform ease-in 300ms;
 }
 
 .bottom-extended {
-    height: 100%;
-    background-color: var(--secondary-color);
-    overflow-y: scroll;
-    padding: 1em 1em;
+  height: 100%;
+  background-color: var(--secondary-color);
+  overflow-y: scroll;
+  padding: 1em 1em;
 }
 
 .bottom-extended-item {
-    text-align: left;
+  text-align: left;
 }
 
 .bottom-extended-image-item {
-    text-align: center;
+  text-align: center;
 }
 
 .bottom-extended-item::before {
-    content: attr(data-section);
-    text-align: left;
-    display: block;
-    font-size: var(--font-size-small);
+  content: attr(data-section);
+  text-align: left;
+  display: block;
+  font-size: var(--font-size-small);
 }
 
 .bottom-extended-item p {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
-.extended .bottom-extended-container{
-    transform: translateY(0);
+.extended .bottom-extended-container {
+  transform: translateY(0);
 }
 
-#extend-button {	
-    height: var(--extend-button-height);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: var(--secondary-color);
+#extend-button {
+  height: var(--extend-button-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--secondary-color);
 }
 
 #extend-button svg {
-    fill: white;
+  fill: white;
 }
-

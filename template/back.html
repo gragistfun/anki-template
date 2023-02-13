@@ -1,71 +1,58 @@
-<main class='container'>
-    <div class='top'>
-        <p id='deckname'> {{Deck}} - Vocabulary </p>
-        <p>
-        {{Vocabulary}}
-        </p>
-    </div>
+<main class="container">
+  <div class="top">
+    <p id="deckname">{{Deck}} - Vocabulary</p>
+    <p>{{Vocabulary}}</p>
+  </div>
 
-    <div class='bottom'>
-        <p class='translation'>
-        {{Translation}}
-        </p>
+  <div class="bottom">
+    <p class="translation">{{Translation}}</p>
+
+    {{#Sentence}}
+    <p>{{Sentence}}</p>
+    {{/Sentence}} {{#Image}}
+    <p>{{Image}}</p>
+    {{/Image}}
+
+    <div class="bottom-extended-container">
+      <div id="extend-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+          <path
+            d="m12.167 29.5-1-1L20 19.667l8.833 8.833-1 1L20 21.667Zm0-10.167-1-1L20 9.5l8.833 8.833-1 1L20 11.458Z"
+          />
+        </svg>
+      </div>
+
+      <div class="bottom-extended">
+        <div class="bottom-extended-item" data-section="Translation">
+          <p class="bottom-extended-item">{{Translation}}</p>
+        </div>
 
         {{#Sentence}}
-        <p>
-        {{Sentence}}
-        </p>
-        {{/Sentence}}
-
-        {{#Image}}
-        <p>
-        {{Image}}
-        </p>
-        {{/Image}}
-
-        <div class='bottom-extended-container'>
-            <div id='extend-button'>
-                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="m12.167 29.5-1-1L20 19.667l8.833 8.833-1 1L20 21.667Zm0-10.167-1-1L20 9.5l8.833 8.833-1 1L20 11.458Z"/></svg>
-            </div>
-
-            <div class='bottom-extended'>
-                <div class='bottom-extended-item' data-section='Translation'>
-                    <p class='bottom-extended-item'>
-                    {{Translation}}
-                    </p>
-                </div>
-
-                {{#Sentence}}
-                <div class='bottom-extended-item' data-section='Sentences'>
-                    <p>
-                    {{Sentence}}
-                    </p>
-                </div>
-                {{/Sentence}}
-
-                {{#Image}}
-                <div class='bottom-extended-item bottom-extended-image-item' data-section='Image'>
-                    {{Image}}
-                </div>
-                {{/Image}}
-
-                {{#Extra}}
-                <div class='bottom-extended-item' data-section='Extra'>
-                    <p>
-                    {{Extra}}
-                    </p>
-                </div>
-                {{/Extra}}
-            </div>
+        <div class="bottom-extended-item" data-section="Sentences">
+          <p>{{Sentence}}</p>
         </div>
+        {{/Sentence}} {{#Image}}
+        <div
+          class="bottom-extended-item bottom-extended-image-item"
+          data-section="Image"
+        >
+          {{Image}}
+        </div>
+        {{/Image}} {{#Extra}}
+        <div class="bottom-extended-item" data-section="Extra">
+          <p>{{Extra}}</p>
+        </div>
+        {{/Extra}}
+      </div>
     </div>
+  </div>
 </main>
 
 <script>
-    const button = document.getElementById('extend-button')
-    const card = document.querySelector('.card')
+  const button = document.getElementById("extend-button");
+  const card = document.querySelector(".card");
 
-    button.addEventListener("click", _ => {
-        card.classList.add('extended')
-    })
+  button.addEventListener("click", (_) => {
+    card.classList.add("extended");
+  });
 </script>
