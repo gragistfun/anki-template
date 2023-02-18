@@ -23,8 +23,8 @@ Extra 2     : hwb(  0 10% 55%)
 
   --max-card-height: 100vh;
   --max-card-width: 100vw;
-  --extend-button-height: 3rem;
 
+  --side-padding: 2rem;
   --border-radius: 0.3rem;
 }
 
@@ -79,8 +79,9 @@ html {
 
 .deck-indicator {
   position: absolute;
-  top: 0.5em;
-  left: 1em;
+  top: 0;
+  left: 0;
+  padding-left: var(--side-padding);
   font-size: var(--font-size-small);
 }
 
@@ -105,26 +106,34 @@ img {
 
 .bottom-extended-container {
   position: absolute;
-  top: calc(-1 * var(--extend-button-height));
+  top: 0;
   left: 0;
-  transform: TranslateY(100%);
   z-index: 20;
-  transition: transform ease-in 300ms;
+  clip-path: circle(1.25rem at calc(100% - 3rem) 2rem);
+  transition: all 0.5s ease-in-out;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
-  width: 100%;
+  padding: var(--side-padding);
+  padding-bottom: 5vh;
   height: 100%;
+  overflow-y: scroll;
   color: white;
   font-size: var(--font-size-normal);
   text-align: center;
 }
 
-.bottom-extended {
+.bottom-extended-container:hover {
+  clip-path: circle(100%);
+}
+
+.more-info {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: var(--secondary-color);
-  padding: 1em 1em;
-  height: 100%;
-  overflow-y: scroll;
+  padding-right: var(--side-padding);
+  text-align: right;
 }
 
 .bottom-extended-item {
@@ -150,15 +159,7 @@ img {
   transform: translateY(0);
 }
 
-#extend-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-  height: var(--extend-button-height);
-  color: white;
-}
-
-#extend-button svg {
+svg {
   fill: white;
+  height: 2rem;
 }
