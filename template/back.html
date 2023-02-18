@@ -5,11 +5,16 @@
   </section>
 
   <section class="bottom">
+    <!-- Translation -->
     <p class="translation">{{Translation}}</p>
 
+    <!-- Sentence -->
     {{#Sentence}}
     <p>{{Sentence}}</p>
-    {{/Sentence}} {{#Image}}
+    {{/Sentence}}
+
+    <!-- Image -->
+    {{#Image}}
     <p>{{Image}}</p>
     {{/Image}}
 
@@ -27,18 +32,25 @@
           <p class="bottom-extended-item">{{Translation}}</p>
         </div>
 
+        <!-- Sentence -->
         {{#Sentence}}
         <div class="bottom-extended-item" data-section="Sentences">
           <p>{{Sentence}}</p>
         </div>
-        {{/Sentence}} {{#Image}}
+        {{/Sentence}}
+
+        <!-- Image -->
+        {{#Image}}
         <div
           class="bottom-extended-item bottom-extended-image-item"
           data-section="Image"
         >
           {{Image}}
         </div>
-        {{/Image}} {{#Extra}}
+        {{/Image}}
+
+        <!-- Extra -->
+        {{#Extra}}
         <div class="bottom-extended-item" data-section="Extra">
           <p>{{Extra}}</p>
         </div>
