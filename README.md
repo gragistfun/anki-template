@@ -10,4 +10,5 @@ My Anki default settings can be found [here](./defaults/README.md).
 
 ```sh
 npm install
+pre-commit install
 ```
