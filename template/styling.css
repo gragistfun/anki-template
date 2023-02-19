@@ -21,9 +21,14 @@ Extra 2     : hwb(  0 10% 55%)
   --font-size-normal: 1rem;
   --font-size-small: 0.75rem;
 
+  --font-vocabulary: var(--font-size-huge);
+  --font-sentence: var(--font-size-large);
+
   --max-card-height: 100vh;
   --max-card-width: 100vw;
 
+  --svg-size: 2rem;
+  --svg-padding-top: 1rem;
   --side-padding: 2rem;
   --border-radius: 0.3rem;
 }
@@ -40,7 +45,7 @@ Extra 2     : hwb(  0 10% 55%)
 }
 
 html {
-  font-size: 20px;
+  font-size: 2vh;
   font-family: "Noto Sans", "Noto Sans JP", sans-serif;
 }
 
@@ -57,7 +62,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 25% 75%;
   box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
   background-color: var(--primary-color) !important;
@@ -101,7 +106,7 @@ img {
   margin-top: 1em;
   border: solid white 2px;
   border-radius: var(--border-radius);
-  max-height: 25vh;
+  max-height: 25vh !important;
 }
 
 .bottom-extended-container {
@@ -109,7 +114,11 @@ img {
   top: 0;
   left: 0;
   z-index: 20;
-  clip-path: circle(1.25rem at calc(100% - 3rem) 2rem);
+  clip-path: circle(
+    calc(var(--svg-size) / 2) at
+      calc(100% - var(--side-padding) - var(--svg-size) / 2)
+      calc(var(--svg-padding-top) + var(--svg-size) / 2)
+  );
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
@@ -118,7 +127,6 @@ img {
   padding-bottom: 5vh;
   height: 100%;
   overflow-y: scroll;
-  color: white;
   font-size: var(--font-size-normal);
   text-align: center;
 }
@@ -131,7 +139,9 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+  margin: 0;
   background-color: var(--secondary-color);
+  padding-top: var(--svg-padding-top);
   padding-right: var(--side-padding);
   text-align: right;
 }
@@ -161,5 +171,6 @@ img {
 
 svg {
   fill: white;
-  height: 2rem;
+  width: var(--svg-size);
+  height: var(--svg-size);
 }
