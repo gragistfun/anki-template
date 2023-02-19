@@ -32,6 +32,7 @@ Extra 2     : hwb(  0 10% 55%)
   --border-radius: 0.3rem;
 }
 
+/* BOILERPLATE */
 *,
 ::before,
 ::after {
@@ -43,6 +44,7 @@ Extra 2     : hwb(  0 10% 55%)
   width: 0px;
 }
 
+/* CARD */
 html {
   font-size: 2vh;
   font-family: "Noto Sans", "Noto Sans JP", sans-serif;
@@ -73,6 +75,7 @@ html {
   height: min(100vh, var(--max-card-height));
 }
 
+/* CARD TOP */
 .top {
   display: flex;
   position: relative;
@@ -93,6 +96,7 @@ html {
   font-size: var(--font-size-small);
 }
 
+/* CARD BOTTOM */
 .bottom {
   position: relative;
   padding: 1em 1em 0;
@@ -157,13 +161,15 @@ button.more-info-button {
   padding: 0 2em;
 }
 
-.translation {
-  font-weight: bold;
-}
-
+/* IMAGE SCALING */
 img {
   margin-top: 1em;
   border: solid white 2px;
   border-radius: var(--border-radius);
   max-height: 25vh !important;
+}
+
+/* UTILITIES */
+.bold {
+  font-weight: bold;
 }
