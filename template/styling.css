@@ -27,8 +27,7 @@ Extra 2     : hwb(  0 10% 55%)
   --max-card-height: 100vh;
   --max-card-width: 100vw;
 
-  --svg-size: 2rem;
-  --svg-padding-top: 1rem;
+  --button-size: 2rem;
   --side-padding: 2rem;
   --border-radius: 0.3rem;
 }
@@ -102,52 +101,41 @@ html {
   text-align: center;
 }
 
-.translation {
-  font-weight: bold;
+button.more-info-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem var(--side-padding) 0 0;
+  border: none;
+  background-color: var(--primary-color);
+  padding: 0;
+  width: var(--button-size);
+  height: var(--button-size);
 }
 
-img {
-  margin-top: 1em;
-  border: solid white 2px;
-  border-radius: var(--border-radius);
-  max-height: 25vh !important;
+.more-info-button svg {
+  fill: white;
 }
 
-.bottom-extended-container {
+.bottom-extended {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 20;
-  clip-path: circle(
-    calc(var(--svg-size) / 2) at
-      calc(100% - var(--side-padding) - var(--svg-size) / 2)
-      calc(var(--svg-padding-top) + var(--svg-size) / 2)
-  );
-  transition: all 0.5s ease-in-out;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
   padding: var(--side-padding);
   padding-bottom: 5vh;
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
   font-size: var(--font-size-normal);
   text-align: center;
 }
 
-.bottom-extended-container:hover {
-  clip-path: circle(100%);
-}
-
-.more-info {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-  background-color: var(--secondary-color);
-  padding-top: var(--svg-padding-top);
-  padding-right: var(--side-padding);
-  text-align: right;
+.extended .bottom-extended {
+  display: block;
 }
 
 .bottom-extended-item {
@@ -169,12 +157,13 @@ img {
   padding: 0 2em;
 }
 
-.extended .bottom-extended-container {
-  transform: translateY(0);
+.translation {
+  font-weight: bold;
 }
 
-svg {
-  fill: white;
-  width: var(--svg-size);
-  height: var(--svg-size);
+img {
+  margin-top: 1em;
+  border: solid white 2px;
+  border-radius: var(--border-radius);
+  max-height: 25vh !important;
 }
