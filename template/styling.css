@@ -59,9 +59,12 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: var(--primary-color) !important;
   height: 100vh;
   overflow: hidden;
+}
+
+.card1 {
+  background-color: var(--primary-color) !important;
   color: var(--primary-contrast-color);
 }
 
@@ -98,41 +101,27 @@ html {
 
 /* CARD BOTTOM */
 .bottom {
-  position: relative;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  font-size: var(--font-size-medium);
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.bottom-page {
+  scroll-snap-align: start;
+  height: 100%;
   padding: 1em 1em 0;
-  overflow: hidden;
   font-size: var(--font-size-medium);
   text-align: center;
 }
 
-button.more-info-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem var(--side-padding) 0 0;
-  border: none;
-  background-color: var(--primary-color);
-  padding: 0;
-  width: var(--button-size);
-  height: var(--button-size);
-}
-
-.more-info-button svg {
-  fill: white;
-}
-
 .bottom-extended {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: var(--border-radius);
   background-color: var(--secondary-color);
   padding: var(--side-padding);
-  padding-bottom: 5vh;
-  width: 100%;
-  height: 100%;
+  padding-bottom: 15vh;
   overflow-y: scroll;
   font-size: var(--font-size-normal);
   text-align: center;
