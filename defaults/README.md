@@ -82,6 +82,15 @@ to study, not the deck of the current card.
 
 ## Tips and Tricks
 
+### Searching
+
+Using the [searching features](https://docs.ankiweb.net/searching.html) provided by Anki can be useful in many
+situations:
+
+- `is:suspended` : Filter for suspended cards
+- `prop:ivl>=366` : Filter for cards with an interval longer than one year to retire mature cards.
+- `added:7` : Filter for cards which were added in the 7 days.
+
 ### Filter and relearn, refactor or delete 'hard' cards
 
 Some cards may be harder to memorize than others. Since time and attention is a limited resource
