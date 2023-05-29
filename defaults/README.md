@@ -89,6 +89,7 @@ To differentiate it may be a good idea to mark those decks, for example `Example
 
 ## References
 
-[Anki Manual](https://docs.ankiweb.net/)
-
-[Effective learning: Twenty rules of formulating knowledge](https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge)
+- [Anki Manual](https://docs.ankiweb.net/)
+- [Effective learning: Twenty rules of formulating knowledge](https://www.supermemo.com/en/blog/twenty-rules-of-formulating-knowledge)
+- [Effective spaced repetition](https://borretti.me/article/effective-spaced-repetition)
+- [Anki scripting](https://www.juliensobczak.com/write/2016/12/26/anki-scripting.html)
