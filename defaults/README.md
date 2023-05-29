@@ -87,6 +87,54 @@ To differentiate it may be a good idea to mark those decks, for example `Example
   - True Retention opens with `Shift + Click` on `Stats`
 - [Anki Simulator](https://ankiweb.net/shared/info/817108664) (817108664)
 
+## Tips and Tricks
+
+### Filter and relearn, refactor or delete 'hard' cards
+
+Some cards may be harder to memorize than others. Since time and attention is a limited resource
+it may be a good idea to filter for those cards and take measures to reduce time spent on those cards.
+
+#### Filter
+
+**Lapses / Leeches**
+
+Lapses in combination with the `Leech threshold` are Anki's build in mechanism to detect 'hard' cards. Cards
+which gone through relearning more often then the `Leech threshold` are getting tagged.
+
+For more information: [Anki Documentation - Leeches](https://docs.ankiweb.net/leeches.html)
+
+**Advanced Browser**
+
+The [Advanced Browser](https://ankiweb.net/shared/info/874215009) Add-on has some more advanced features to
+filter for hard cards:
+
+- `Percent Correct`
+- `Time (Total)`
+- `Time (Average)`
+
+#### Dealing with 'hard' cards
+
+There are different strategies to deal with hard cards:
+
+**Suspend**
+
+You are missing context or the card is simple to advanced for the current point in time. Suspend the card and
+come back to it at a late point in time.
+
+**Relearn**
+
+Maybe you have started a card before thoroughly understanding the subject matter. After revisiting the subject
+matter reset the card since the ease of card remains low otherwise, and you will see the card more often then
+intended.
+
+**Refactor**
+
+The structure of the card makes it hard to remember. Refactor the card to make it more atomic.
+
+**Delete**
+
+The card has no relevance to you and/or other strategies yielded no results. Delete the card!
+
 ## References
 
 - [Anki Manual](https://docs.ankiweb.net/)
