@@ -19,22 +19,22 @@
 
 **New card**
 
-- Learning steps : 15m 1h 6h 1d 2d 4d 7d
+- Learning steps : 3m 1h 6h 2d 4d 7d
 - Graduating interval : 12
 - Easy interval : 7
 - Insertion order : Sequential (with Scheduler v3 set with 'Display Order')
 
 **Lapses**
 
-- Relearning steps : 15m 4h 2d 7d
+- Relearning steps : 3m 6h 2d 7d
 - Minimum interval : 12
-- Leech threshold : 5
+- Leech threshold : 3
 - Leech action : Tag Only
 
 **Display Order**
 
 - New card gather order : Deck
-- New card sort order\* : Order gatheres / Card type, then random (ordered / shuffled)
+- New card sort order : Order gatheres
 - New/review order : Show before reviews
 - Interday learning/review order : Mix with reviews
 - Review sort order : Due date, then random
@@ -43,6 +43,7 @@
 
 - Bury new siblings : yes
 - Bury review siblings : yes
+- Bury interday learning siblings : yes
 
 **Advanced**
 
